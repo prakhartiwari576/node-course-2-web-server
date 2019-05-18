@@ -50,6 +50,13 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects Page',
+    WelcomeMessage:'This is the fucking projects page'
+  });
+});
+
 app.get('/bad',(req,res)=>{
   res.send({
     errorMessage:'Unable to fetch data'
